@@ -139,7 +139,7 @@ namespace TechWise.Web.Extentions
 
         public static async Task<WebApplication> ConfigureMiddelware(this WebApplication app)
         {
-            await app.SeedData();
+            //await app.SeedData();
 
             // strip webook need row body
             app.Use(async (context, next) =>
